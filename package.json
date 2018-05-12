@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files '*.html, js/*.js, css/*.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariomelchor/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariomelchor/portfolio/issues"
+  },
+  "homepage": "https://github.com/mariomelchor/portfolio#readme"
+}
