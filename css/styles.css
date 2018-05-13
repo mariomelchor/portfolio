@@ -28,10 +28,11 @@
 	transform: translate( -50%, -50%);
 }
 .profile-pic {
-	height: 200px;
-	width: 200px;
+	height: 250px;
+	width: 250px;
+	margin-top: -175px;
 	border-radius: 50%;
-	border: .5rem solid rgba(255,255,255,.2);
+	border: 10px solid rgba(255,255,255,.2);
 }
 .my-name {
 	border-bottom: solid 1px #fff;
@@ -41,6 +42,10 @@
 h1, h2 {
 	font-family: "fatfrank",sans-serif;
 	font-weight: 400;
+}
+.site-footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 /*------------------------------------*\
@@ -58,8 +63,11 @@ h1, h2 {
 	background-image: linear-gradient(to right,#43cea2, #185a9d);
 }
 .section-about-me .container{
-	margin-top: -150px;
+	/* margin-top: -150px; */
 	background: #fff;
+}
+.section-my-skills {
+	background: linear-gradient(45deg,  rgba(224, 0, 17, 0.75), rgba(255, 145, 0, 0.75), rgba(224, 0, 17, 0.75));
 }
 
 /*------------------------------------*\
