@@ -1,0 +1,110 @@
+body {
+
+}
+
+.site-header {
+	background-color: #000;
+	height: 70px;;
+}
+.header-row {
+	height: 75px;
+}
+.site-logo {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+.hero-img {
+	padding: 5px;
+	height: calc(100vh - 104px);
+	background: linear-gradient(45deg, rgba(255, 145, 0, 0.75), rgba(224, 0, 17, 0.75)), url('../images/layout/coding-bg.jpg');
+	background-position: center 19%;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.profile-pic {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: .5rem solid rgba(255,255,255,.2);
+}
+
+
+h1, h2 {
+	font-family: "fatfrank",sans-serif;
+	font-weight: 400;
+}
+
+/*------------------------------------*\
+	#Sections
+\*------------------------------------*/
+
+.section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.section-gradient {
+	background-image: -webkit-linear-gradient(left, #43cea2, #185a9d);
+	background-image: linear-gradient(to right,#43cea2, #185a9d);
+}
+.section-about-me .container{
+	margin-top: -100px;
+	background: #fff;
+}
+
+/*------------------------------------*\
+	#Video
+\*------------------------------------*/
+
+.homepage-hero-module {
+	border-right: none;
+	border-left: none;
+	position: relative;
+	display: none;
+	/* height: 800px; */
+}
+.no-video .video-container video,
+.touch .video-container video {
+	display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+	display: block !important;
+}
+.video-container {
+	position: relative;
+	bottom: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: #000;
+}
+.video-container .poster img {
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+}
+.video-container .filter {
+	z-index: 100;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.4);
+	width: 100%;
+}
+.video-container video {
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+}
+.video-container video.fillWidth {
+	width: 100%;
+}
+
+/*------------------------------------*\
+	#Sections
+\*------------------------------------*/
+
+.list-social i {
+	color: #333;
+}
