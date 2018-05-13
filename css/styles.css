@@ -49,8 +49,36 @@ h1, h2 {
 	font-weight: 400;
 }
 .site-footer {
-	padding-top: 50px;
+	color: #7a7a7a;
+	margin-top: 75px;
+	padding-top: 125px;
 	padding-bottom: 50px;
+	position: relative;
+}
+.site-footer:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 150px;
+	width: 150px;
+	transform: translate( -50%, -50%);
+	background-image: url('../images/layout/mskuared-logo.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 150px 150px;
+}
+.site-footer a {
+	color:	inherit;
+	text-decoration: none;
+	transition: all .25s linear;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+	color: #fff;
+}
+.site-copyright {
+	font-size: 90%;
 }
 
 /*------------------------------------*\
@@ -127,6 +155,18 @@ h1, h2 {
 	#Sections
 \*------------------------------------*/
 
-.list-social i {
-	color: rgba(255,255,255,.5);
+.site-header .list-social a {
+	color: #7a7a7a;
+}
+.list-inline a,
+.navbar-nav a {
+	color: #7a7a7a;
+	text-decoration: none;
+	transition: all .25s linear;
+}
+.list-inline a:hover,
+.list-inline a:focus,
+.navbar-nav a:hover,
+.navbar-nav a:focus {
+	color: #fff;
 }
