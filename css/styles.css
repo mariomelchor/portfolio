@@ -1,13 +1,12 @@
-body {
-
-}
-
 .site-header {
 	background-color: #000;
 	height: 70px;;
 }
 .header-row {
 	height: 75px;
+}
+.navbar-brand {
+	width: 200px;
 }
 .site-logo {
 	display: inline-block;
@@ -17,7 +16,7 @@ body {
 }
 .hero-img {
 	padding: 5px;
-	height: calc(100vh - 104px);
+	height: calc(100vh - 400px);
 	background: linear-gradient(45deg, rgba(255, 145, 0, 0.75), rgba(224, 0, 17, 0.75)), url('../images/layout/coding-bg.jpg');
 	background-position: center 19%;
 	background-attachment: fixed;
