@@ -15,23 +15,6 @@
 	}		
 }
 
-.hero-img {
-	/* color: #000;; */
-	padding: 5px;
-	/* height: calc(100vh - 400px); */
-	background: linear-gradient(45deg, rgba(255, 145, 0, 0.75), rgba(224, 0, 17, 0.75)), url('../images/layout/coding-bg.jpg');
-	background-position: center 19%;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 600px;
-	position: relative;
-}
-.intro-description {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate( -50%, -50%);
-}
 .profile-pic {
 	height: 250px;
 	width: 250px;
@@ -91,6 +74,32 @@ h1, h2 {
 	position: relative;
 	z-index: 10;
 }
+.section-feature {
+	background-position: center 19%;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+.section-feature:before {
+	content: '';
+	position: absolute;
+	z-index: 10;
+	background: linear-gradient(45deg, rgba(255, 145, 0, 0.40), rgba(224, 0, 17, 0.40)) ;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.section-feature .intro-description {
+	color: rgba( 255, 255, 255, .75);
+	position: absolute;
+	z-index: 20;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+}
 .section-gradient {
 	background-image: -webkit-linear-gradient(left, #43cea2, #185a9d);
 	background-image: linear-gradient(to right,#43cea2, #185a9d);
@@ -104,60 +113,9 @@ h1, h2 {
 }
 
 /*------------------------------------*\
-	#Video
+	#List
 \*------------------------------------*/
 
-.homepage-hero-module {
-	border-right: none;
-	border-left: none;
-	position: relative;
-	display: none;
-	/* height: 800px; */
-}
-.no-video .video-container video,
-.touch .video-container video {
-	display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-	display: block !important;
-}
-.video-container {
-	position: relative;
-	bottom: 0%;
-	left: 0%;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	background: #000;
-}
-.video-container .poster img {
-	width: 100%;
-	bottom: 0;
-	position: absolute;
-}
-.video-container .filter {
-	z-index: 100;
-	position: absolute;
-	background: rgba(0, 0, 0, 0.4);
-	width: 100%;
-}
-.video-container video {
-	position: absolute;
-	z-index: 0;
-	bottom: 0;
-}
-.video-container video.fillWidth {
-	width: 100%;
-}
-
-/*------------------------------------*\
-	#Sections
-\*------------------------------------*/
-
-.site-header .list-social a {
-	color: #7a7a7a;
-}
 .list-inline a,
 .navbar-nav a {
 	color: #7a7a7a;
@@ -169,4 +127,12 @@ h1, h2 {
 .navbar-nav a:hover,
 .navbar-nav a:focus {
 	color: #fff;
+}
+.list-skills .list-inline-item {
+	color: rgba( 255, 255, 255, .50);
+	margin: 20px;
+	transition: all .25s linear;
+}
+.list-skills .list-inline-item:hover{
+	color: rgba( 255, 255, 255, 1);
 }
