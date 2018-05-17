@@ -7,7 +7,7 @@ $(document).ready(function() {
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
         var pos = target.offset();
-            pos = pos.top;
+            pos = pos.top - 72;
         $("html,body").animate( { scrollTop: pos },  800 ); return false;
       }
     }

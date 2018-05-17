@@ -81,7 +81,7 @@ h1, h2 {
 
 }
 .section-feature {
-	height: 600px;
+	min-height: 600px;
 	background-image: url('../video/Snapshots/Hello-World.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -92,7 +92,7 @@ h1, h2 {
 	content: '';
 	position: absolute;
 	z-index: 10;
-	/* background: linear-gradient(45deg, rgba(255, 145, 0, 0.40), rgba(224, 0, 17, 0.40)) ; */
+	background: linear-gradient(45deg, rgba(0, 47, 108, 0.75), rgba(224, 0, 17, 0.40) );
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -101,12 +101,25 @@ h1, h2 {
 .section-feature .intro-description {
 	color: rgba( 255, 255, 255, .75);
 	position: absolute;
-	z-index: 20;
+	left: 0;
+	right: 0;
 	top: 50%;
-	left: 50%;
-	max-width: 700px;
-	transform: translate( -50%, -50%);
+	z-index: 20;
+	transform: translate( 0, -50%);
+	padding-left: 20px;
+	padding-right: 20px;
 }
+
+@media ( min-width: 1200px ) {
+	.section-feature .intro-description {
+		left: 50%;
+		right: auto;
+		transform: translate( -50%, -50%);
+		max-width: 750px;
+		left: 50%;
+	}
+}
+
 .section-feature .my-name {
 	letter-spacing: 4px;
 	border-bottom: solid 1px #fff;
