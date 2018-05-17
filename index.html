@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body>
+<body id="home">
 
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <header class="site-header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#"><img src="images/layout/mskuared.png" class="img-fluid" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
       <div class="navbar-collapse collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto text-uppercase">
           <li class="nav-item">
-            <a class="nav-link smooth-scroll" href="#">Home</a>
+            <a class="nav-link smooth-scroll" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link smooth-scroll" href="#about">About</a>
@@ -55,13 +55,6 @@
 
   <section class="section-feature">
 
-    <div class="embed-responsive embed-responsive-16by9">
-      <video playsinline autoplay muted loop class="embed-responsive-item" poster="video/Snapshots/Hello-World.jpg">
-        <source src="video/MP4/Hello-World.webm" type="video/webm">
-        <source src="video/MP4/Hello-World.mp4" type="video/mp4">
-      </video><!-- /.embed-responsive-item -->
-    </div><!-- /.embed-responsive  -->
-
     <div class="intro-description text-center">
       <h1 class="my-name text-uppercase">Mario Melchor</h1>
       <h2 class="my-position">Front-End Developer / WordPress Developer</h2>
@@ -85,7 +78,7 @@
     <div class="container text-center">
       <h2 class="text-uppercase">Work</h2>
 
-      <nav class="nav" role="tablist">
+      <nav class="nav justify-content-center" role="tablist">
         <a type="button" class="btn btn-secondary" id="programming-tab" data-toggle="tab" href="#programming" role="tab" aria-controls="programming" aria-selected="true">Programming</a>
         <a type="button" class="btn btn-secondary" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design" aria-selected="true">Design</a>
       </nav><!-- /.btn-group -->
@@ -293,7 +286,7 @@
     </div><!-- /.container-fluid -->
   </section><!-- /.section-my-skills -->
 
-  <section id="contact" class="section">
+  <section id="contact" class="section section-contact hidden">
     <div class="container text-center">
       <h2 class="text-uppercase">Contact Me</h2>
 
@@ -328,7 +321,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="js/hero-video.js"></script>
   <script src="js/scripts.js"></script>
-
 
 </body>
 </html>
