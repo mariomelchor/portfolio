@@ -132,15 +132,29 @@ h1, h2 {
 	background-image: linear-gradient(to right,#43cea2, #185a9d);
 }
 .section-about-me {
-	margin-top: -175px;
 	position: relative;
+	background-color: #f2f2f2;
+}
+.section-about-me:before {
+	content: '';
+	position: absolute;
 	z-index: 10;
+	left: 0;
+	right: 0;
+	bottom: 80%;
+	transform: skewY( -2.2deg );
+	height: 100px;
+	background-color: inherit;
 }
 .section-about-me .profile-pic {
 	height: 250px;
 	width: 250px;
+	margin-top: -200px;
+	z-index: 20;
+	position: relative;
 	border-radius: 50%;
 	border: 10px solid rgba(255,255,255,.2);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, .15);
 }
 .section-my-skills {
 	background: linear-gradient(45deg,  rgba(224, 0, 17, 0.75), rgba(255, 145, 0, 0.75), rgba(224, 0, 17, 0.75));
