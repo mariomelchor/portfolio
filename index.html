@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body id="home">
 
@@ -56,15 +55,17 @@
   <section class="section-feature">
     <div class="intro-description text-center">
       <h1 class="my-name header-divider text-uppercase">Mario Melchor</h1>
-      <h2 class="my-position header-divider">Front-End Developer / WordPress Developer</h2>
-      <p>Passionate Developer with 12+ years experience. strong design background. Constantly driven to improve my skills with the goal of mastering web technologies.</p>
-      <p><a href="#contact" class="btn btn-secondary text-uppercase smooth-scroll">Contact</a></p>
+      <h2 class="my-position header-divider h4">Front-End Developer / WordPress Developer</h2>
+			<p>Passionate Developer with 12+ years experience. Strong design background. Constantly driven to improve my skills with the goal of mastering web technologies.</p>
+			
+			<div id="about"></div>
     </div><!-- /.intro-description -->
   </section><!-- /.section-feature -->
   
-  <section id="about" class="section section-about-me text-center">
+  <section class="section section-about-me text-center">
     <div class="container">
-      <img src="images/layout/profile-pic-400x400.jpg" alt="" class="profile-pic">
+			<img src="images/layout/profile-pic-400x400.jpg" alt="" class="profile-pic mb-5">
+			
       <h2 class="text-uppercase header-divider">About</h2>
   
       <p>I am currently working for Dhali a Web Design company in Rancho Santa Margarita. I started working for Dhali on May 2005. Before that, I was attending The Art Institute of California – Orange County from October 2002 through December 2004 where I received an Associates of Science Degree in Interactive Media Design. I will be receiving my Certificate of Completion in Full Stack Web Development from the University of California in December 2017.</p>
@@ -75,9 +76,9 @@
     <div class="container text-center">
       <h2 class="text-uppercase header-divider">Portfolio</h2>
 
-      <nav class="nav justify-content-center" role="tablist">
-        <a type="button" class="btn btn-secondary" id="programming-tab" data-toggle="tab" href="#programming" role="tab" aria-controls="programming" aria-selected="true">Programming</a>
-        <a type="button" class="btn btn-secondary" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design" aria-selected="true">Design</a>
+      <nav class="nav justify-content-center mb-4 mt-4" role="tablist">
+        <a class="btn btn-link text-uppercase" id="programming-tab" data-toggle="tab" href="#programming" role="tab" aria-controls="programming" aria-selected="true">Programming</a>
+        <a class="btn btn-link text-uppercase" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design" aria-selected="true">Design</a>
       </nav><!-- /.btn-group -->
 
       <div class="tab-content">
@@ -296,8 +297,11 @@
   </section><!-- /.section -->
 
   <section id="skills" class="section section-my-skills">
-    <div class="container-fluid text-center">
-      <h2 class="text-uppercase header-divider">Skills</h2>
+    <div class="container text-center">
+			<h2 class="text-uppercase header-divider">Skills</h2>
+		</div><!-- /.container -->
+
+		<div class="container-fluid text-center">
       <ul class="list-inline list-skills mb-0">
         <li class="list-inline-item"><i class="fab fa-html5 fa-5x"></i></li>
         <li class="list-inline-item"><i class="fab fa-css3-alt fa-5x"></i></li>
@@ -317,8 +321,8 @@
         <li class="list-inline-item"><i class="fab fab fa-php fa-5x"></i> Illustrator</li>
         <li class="list-inline-item"><i class="fab fab fa-php fa-5x"></i> Adobe XD</li>
         <li class="list-inline-item"><i class="fab fab fa-php fa-5x"></i> MySQL</li> -->
-      </ul>
-    </div><!-- /.container-fluid -->
+			</ul>
+		</div><!-- /.container-fluid -->
   </section><!-- /.section-my-skills -->
 
   <section id="contact" class="section section-contact hidden">
@@ -330,8 +334,10 @@
   
   <footer class="site-footer text-center">
 
+		<img src="images/layout/mskuared-logo-1.png" alt="Mskuared" class="img-fluid mskuared-logo">
+
     <ul class="list-inline text-uppercase">
-      <li class="list-inline-item"><a href="#" class="smooth-scroll">Home</a></li>
+      <li class="list-inline-item"><a href="#home" class="smooth-scroll">Home</a></li>
       <li class="list-inline-item"><a href="#about" class="smooth-scroll">About</a></li>
       <li class="list-inline-item"><a href="#portfolio" class="smooth-scroll">Portfolio</a></li>
       <li class="list-inline-item"><a href="#skills" class="smooth-scroll">Skills</a></li>

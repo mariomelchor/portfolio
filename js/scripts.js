@@ -8,7 +8,11 @@ $(document).ready(function() {
       if (target.length) {
         var pos = target.offset();
             pos = pos.top - 72;
-        $("html,body").animate( { scrollTop: pos },  800 ); return false;
+        $("html,body").animate( { scrollTop: pos },  800 ); 
+        
+        $('.navbar-collapse').toggleClass('show');
+        
+        return false;
       }
     }
   });
