@@ -155,7 +155,7 @@ h1, h2 {
 		left: 50%;
 		right: auto;
 		transform: translate( -50%, -50%);
-		max-width: 750px;
+		max-width: 800px;
 	}
 }
 
@@ -207,6 +207,19 @@ h1, h2 {
 	#Cards
 \*------------------------------------*/
 
+.card-portfolio {
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	transition: all .15s ease-in;
+	overflow: hidden;
+	text-decoration: none;
+}
+.card-portfolio img {
+	transition: all .15s ease-in;
+}
+.card-portfolio:hover,
+.card-portfolio:hover img {
+	transform: scale( 1.1 );
+}
 .card-portfolio .card-body {
 	padding: .5rem;
 }
