@@ -39,6 +39,7 @@
 .site-footer:before {
 	content: '';
 	position: absolute;
+	z-index: 100;
 	top: 0;
 	left: 50%;
 	height: 150px;
@@ -49,6 +50,17 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 150px 150px;
+}
+.site-footer:after {
+	content: '';
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	bottom: 85%;
+	transform: skewY( -2.2deg );
+	height: 100px;
+	background-color: inherit;
 }
 .site-footer a {
 	color:	inherit;
@@ -144,7 +156,6 @@ h1, h2 {
 		right: auto;
 		transform: translate( -50%, -50%);
 		max-width: 750px;
-		left: 50%;
 	}
 }
 
@@ -179,6 +190,9 @@ h1, h2 {
 	border: 10px solid rgba(255,255,255,.2);
 	box-shadow: 0 2px 0 rgba(0, 0, 0, .15);
 }
+.section-portfolio {
+	background-color: #f2f2f2;
+}
 .section-my-skills {
 	background-image:  linear-gradient(45deg, rgba(0, 47, 108, 0.75), rgba(224, 0, 17, 0.40)), url('../video/Snapshots/Hello-World.jpg');
 	background-repeat: no-repeat;
@@ -187,6 +201,14 @@ h1, h2 {
 .section-contact { 
 	display: none;
 	visibility: hidden;
+}
+
+/*------------------------------------*\
+	#Cards
+\*------------------------------------*/
+
+.card-portfolio .card-body {
+	padding: .5rem;
 }
 
 /*------------------------------------*\
