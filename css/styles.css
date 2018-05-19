@@ -217,6 +217,7 @@ a:hover {
 	background-image:  linear-gradient(45deg, rgba(0, 47, 108, 0.75), rgba(224, 0, 17, 0.40)), url('../video/Snapshots/Hello-World.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-bottom: 6rem;
 }
 .section-my-skills {
 	color: rgba( 255, 255, 255, .75);
@@ -267,11 +268,19 @@ a:hover {
 }
 .list-skills .list-inline-item {
 	color: rgba( 255, 255, 255, .50);
-	margin: 20px;
+	margin: 20px 15px;
 	transition: all .25s linear;
 }
-.list-skills .list-inline-item:hover{
+.list-skills .list-inline-item:hover {
 	color: rgba( 255, 255, 255, 1);
+}
+.list-skills .list-inline-item img {
+	opacity: .5;
+	transition: all .25s linear;
+	vertical-align: text-bottom;
+}
+.list-skills .list-inline-item:hover img {
+	opacity: 1;
 }
 
 /*------------------------------------*\
