@@ -172,6 +172,10 @@ a:hover {
 .section-feature .my-position {
 	letter-spacing: 3px;
 }
+.section-feature .btn-resume {
+	color: #fff;
+	border-color: #fff;
+}
 .section-about-me {
 	position: relative;
 	background-color: #fff;
