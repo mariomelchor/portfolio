@@ -129,7 +129,7 @@ a:hover {
 }
 .section-feature {
 	min-height: 600px;
-	background-image: url('../video/Snapshots/Hello-World.jpg');
+	background-image: url('../images/layout/Hello-World.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -218,7 +218,7 @@ a:hover {
 	background-position: 0 0;
 }
 .section-my-skills {
-	background-image:  linear-gradient(45deg, rgba(0, 47, 108, 0.75), rgba(224, 0, 17, 0.40)), url('../video/Snapshots/Hello-World.jpg');
+	background-image:  linear-gradient(45deg, rgba(0, 47, 108, 0.75), rgba(224, 0, 17, 0.40)), url('../images/layout/Hello-World.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 6rem;
