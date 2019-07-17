@@ -433,6 +433,14 @@
 		gtag('js', new Date());
 
 		gtag('config', 'UA-20855784-1');
+		
+		var resume = document.querySelector('.btn-resume');
+    resume.addEventListener('click', function() {
+      gtag('event', 'clicked', {
+        'event_category': 'Buttons',
+        'event_label': 'Download Resume'
+      });
+    })
 	</script>
 </body>
 </html>
